@@ -1,44 +1,161 @@
+/* dinh dang cho body */
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
   }
   
   body {
-	font-family: Arial, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
+	line-height: 1.6;
   }
   
-  /* Header */
+  a {
+	text-decoration: none;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  /* dinh dang mau sac cho cac header kieu chu  */
   header {
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+  }
+  
+  nav ul {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	background-color: #333;
-	padding: 10px 20px;
+  }
+  
+  nav ul li a {
 	color: #fff;
   }
   
-  .logo {
-	width: 100px;
+  /* nut shop now cac van ban bao gom cac lop hero,text,h1.... */
+  .hero {
+	background-image: url('hero-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
   }
   
-  .cart-icon {
+  .hero-text {
+	text-align: center;
+	color: black;
+  }
+  
+  .hero-text h1 {
+	font-size: 64px;
+	margin-bottom: 20px;
+  }
+  
+  .hero-text p {
 	font-size: 24px;
-	margin-left: 20px;
-	cursor: pointer;
+	margin-bottom: 30px;
   }
   
-  .menu-icon {
-	font-size: 24px;
-	cursor: pointer;
+  .cta-btn {
+	display: inline-block;
+	background-color: #c00;
+	color: #fff;
+	padding: 12px 24px;
+	border-radius: 30px;
+	transition: background-color 0.2s ease-in-out;
   }
   
-  /* Banner */
-  .banner {
+  .cta-btn:hover {
+	background-color: #900;
+  }
+  
+  /* models dinh dang cac phong chu mau sac */
+  .models {
+	padding: 40px;
+  }
+  
+  .models h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+  }
+  
+  .model-card {
+	background-color: #f9f9f9;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	text-align: center;
+  }
+  
+  .model-card img {
 	width: 100%;
-	height: 400px;
+	height: auto;
+  }
+  
+  .model-card h3 {
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .model-card p {
+	font-size: 18px;
+	margin-bottom: 20px;
+  }
+  
+  /* dinh dang events ve backgroud va cac muc events h2,h3,card,card img */
+  .events {
+	background-color: #f9f9f9;
+	padding: 40px;
+  }
+  
+  .events h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+  }
+  
+  .event-card {
+	background-color: #fff;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	text-align: center;
+  }
+  
+  .event-card img {
+	width: 100%;
+	height: auto;
+  }
+  
+  .event-card h3 {
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .event-card p {
+	font-size: 18px;
+	margin-bottom: 20px;
+  }
+  
+  /* dinh dang phan footer can giua cac van ban dinh dang banner  */
+  footer {
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  footer p {
+	font-size: 18px;
+  }
+  .banner {
 	position: relative;
+	height: 500px;
+	overflow: hidden;
   }
   
   .banner img {
@@ -47,103 +164,202 @@
 	object-fit: cover;
   }
   
-  .banner-dots {
+  .banner-text {
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+  }
+  
+  .banner-text h1 {
+	font-size: 4em;
+	margin: 0;
+  }
+  
+  .banner-text p {
+	font-size: 1.5em;
+	margin: 20px 0;
+  }
+  
+  .button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #e60000;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+	background-color: #990000;
+  }
+  /* phan nay su dung de dinh dang cac van ban va video cua phan cuoi web size Ferrari Track Day va Ferrari-Racing-Experience */
+  .track-day {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+  }
+  
+  .track-day video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+  }
+  
+  .track-day .content {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 50px;
+	color: #fff;
+  }
+  .ferrari-racing-experience {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+  }
+  
+  .ferrari-racing-experience video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+  }
+  
+  .ferrari-racing-experience .content {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 50px;
+	color: #fff;
+  }
+  
+
+
+  /* css cho phần about */
+  /* Reset styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
 	display: flex;
-  }
-  
-  .dot {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	margin-right: 10px;
-	background-color: #ccc;
-	cursor: pointer;
-  }
-  
-  .dot.active {
-	background-color: #333;
-  }
-  
-  /* Menu */
-  nav {
-	display: flex;
-	justify-content: center;
 	align-items: center;
-	background-color: #f1f1f1;
+	justify-content: space-between;
+	background-color: #1d1d1d;
+	padding: 20px 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+.logo img {
 	height: 50px;
-  }
-  
-  nav ul {
+}
+
+.menu {
 	display: flex;
 	list-style: none;
-  }
-  
-  nav ul li {
-	margin-right: 20px;
-  }
-  
-  nav ul li a {
-	color: #333;
+}
+
+.menu li {
+	margin-left: 20px;
+}
+
+.menu li:first-child {
+	margin-left: 0;
+}
+
+.menu li a {
+	color: #fff;
 	text-decoration: none;
 	font-size: 18px;
-	font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-	color: #777;
-  }
-  
-  /* Content */
-  .content {
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+	color: #dc3545;
+}
+
+.menu li.active a {
+	color: #dc3545;
+}
+
+/* About Section */
+.about {
+	margin-top: 100px;
+	padding: 0 100px;
+}
+
+.about h1 {
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+
+.about .about-content {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-wrap: wrap;
-	margin: 50px 0;
-  }
-  
-  .content-item {
-	width: calc(25% - 20px);
-	margin: 10px;
-  }
-  
-  .content-item img {
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-	.content-item {
-	  width: calc(50% - 20px);
-	}
-  }
-  /* Căn giữa footer */
-footer {
-	display: flex;
 	justify-content: space-between;
-	align-items: center;
-  }
-  
-  /* Đặt HOTLINE bên trái */
-  #hotline {
-	margin-right: auto;
-  }
-  
-  /* Đặt CUSTOMER SERVICE bên phải */
-  #customer-service {
-	margin-left: auto;
-  }
-  .header-right {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	background-color: chartreuse;
-  }
-  
+}
+
+.about .about-content .card {
+	flex-basis: calc(33.33% - 20px);
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+.about .about-content .card h2 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.about .about-content .card p {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.about .about-content .card a {
+	display: inline-block;
+	background-color: #dc3545;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.about .about-content .card a:hover {
+	background-color: #c82333;
+}
+
+	
   
   

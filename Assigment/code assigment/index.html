@@ -1,57 +1,88 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Assigment</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header>
-      <div class="header-left">
-        <img src="https://via.placeholder.com/100x50" alt="Logo">
-      </div>
-      <div class="header-right">
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        <a href="#"><i class="fas fa-bars"></i></a>
-      </div>
-    </header>
-    <div class="banner">
-      <img class="banner-image" src="https://via.placeholder.com/1200x400" alt="Banner">
-    </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assigment by Hieu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
     <nav>
       <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>      
     </nav>
-    <div class="content">
-      <div class="content-image">
-        <img src="https://via.placeholder.com/200x300" alt="Ảnh 1">
+  </header>
+  <div class="banner">
+    <img src="images/banner.jpg" alt="Ferrari Banner">
+    <div class="banner-text">
+      <h1>Welcome to Ferrari</h1>
+      <p>Experience the thrill of driving a Ferrari</p>
+      <a href="#" class="button">View Cars</a>
+    </div>
+  </div>  
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Ferrari</h1>
+        <p>Experience the ultimate thrill with our world-class supercars.</p>
+        <a href="#" class="cta-btn">Shop now</a>
       </div>
-      <div class="content-image">
-        <img src="https://via.placeholder.com/200x300" alt="Ảnh 2">
+    </section>
+
+    <section class="models">
+      <h2>List Of Productc</h2>
+      <div class="model-card">
+        <img src="images/ferrari488.jpg" alt="Ferrari Model 1">
+        <h3>Ferrari 488</h3>
+        <p>Starting from $300,000</p>
+        <a href="#" class="cta-btn">View details</a>
       </div>
-      <div class="content-image">
-        <img src="https://via.placeholder.com/200x300" alt="Ảnh 3">
+      <div class="model-card">
+        <img src="images/Ferrari Portofino.jpg" alt="Ferrari Model 2">
+        <h3>Ferrari Portofino</h3>
+        <p>Starting from $500,000</p>
+        <a href="#" class="cta-btn">View details</a>
       </div>
-      <div class="content-image">
-        <img src="https://via.placeholder.com/200x300" alt="Ảnh 4">
+      <div class="model-card">
+        <img src="images/Ferrari F8 Tributo.jpg" alt="Ferrari Model 3">
+        <h3>Ferrari F8 Tributo</h3>
+        <p>Starting from $700,000</p>
+        <a href="#" class="cta-btn">View details</a>
+      </div>
+    </section>
+
+    <div class="track-day">
+      <video src="images/Passione Ferrari Sydney Motorsport Park _ Track Day - 21st April 2022.mp4" autoplay loop muted></video>
+      <div class="content">
+        <h2>Ferrari Track Day</h2>
+        <p>Join us for an exclusive track day event at the famous Fiorano circuit in Maranello, Italy.</p>
+        <a href="#" class="button">Learn More</a>
       </div>
     </div>
-    <footer>
-      <div id="hotline">
-        <p>HOTLINE</p>
-        <p>0708-36-8686</p>
-        <p>manager@dvrk.vn</p>
+    
+    <div class="ferrari-racing-experience">
+      <video src="images/Ferrari_ The Race Experience Intro.mp4" autoplay loop muted></video>
+      <div class="content">
+        <h3>Ferrari-Racing-Experience</h3>
+        <p>Location: Monza Circuit
+          
+          Date: December 5, 2023</p>
+        <a href="#" class="button">Learn More</a>
       </div>
-      <div id="customer-service">
-       <a href="http://">CUSTOMER SERVICE</a> 
-       <br>
-       <a href="http://">PRIVACY POLICY</a> 
-      </div>
-    </footer>
-  </body>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Ferrari</p>
+  </footer>
+
+</body>
 </html>
