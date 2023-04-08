@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+    
+
+            <div class="inner-header container">
+                <a href="" id="logo">luxury Cars</a>
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="#cars">Cars</a></li>
+                        <li><a href="#brand">Brand</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- slider -->
+        <div class="banner">
+<div class="bannerslider">
+        <div class="slideshow-container">
+      
+            <div class="mySlides fade">
+              <img src="images/1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/3.jpg" style="width:100%">
+            </div>
+            
+</div>
+            <div class="banner-text">
+                <h1>Welcome to Luxury Cars</h1>
+                <p>Experience the thrill of driving a brand luxury cars</p>
+                <br>
+                <a href="#" class="button">View Cars</a>
+              </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+</div>
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+            <main>
+              <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Luxury Cars</h1>
+        <p>Experience the ultimate thrill with our world-class supercars.</p>
+        <a href="#" class="cta-btn">Shop now</a>
+      </div>
+
+      
+    </section>
+
+    <div class="track-day">
+      <video src="images/Flame Spitting Aventador S in [4K].mp4" autoplay loop muted></video>
+      <div class="content">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <h2>Super car experience</h2>
+        <p>Join us for an exclusive track day event at the famous Fiorano circuit in Maranello, Italy.</p>
+      </div>
+    </div>
+    
+    <div class="ferrari-racing-experience">
+      <video src="images/Flame Spitting McLaren 720s _ 4K.mp4" autoplay loop muted></video>
+      <div class="content">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <h3>Luxury cars-Experience</h3>
+        <p>Location: Monza Circuit
+          
+          Date: December 5, 2023</p>
+      </div>
+    </div>
+
+            </main>
+            
+            <section id="cars" class="cars">
+              <h2>Cars List</h2>
+              <div class="cars car-list">
+                <div class="car">
+                  <img src="images/cars1.jpg" alt="Car 1">
+                  <h3> Lamborghini Invencible</h3>
+                  <p>Brand: Lamborghini </p>
+                </div>
+                <div class="car">
+                  <img src="images/cars2.jpg" alt="Car 2">
+                  <h3>Ferrari-LaFerrari-3 </h3>
+                  <p>Brand: Ferrari</p>
+                </div>
+                <div class="car">
+                  <img src="images/cars3.jpg" alt="Car 3">
+                  <h3>Bugatti Chiron Profilée</h3>
+                  <p>Brand: Bugatti</p>
+                </div>
+                <div class="car">
+                  <img src="images/cars4.jpg" alt="Car 4">
+                  <h3>Porsche 918 Spyder </h3>
+                  <p>Brand: Porsche</p>
+                </div>
+                
+              </div>              
+            </section>
+            
+            <section class="brand">
+              <div id="brand">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="section-title">
+                        <h2>Our Brands</h2>
+                      </div>
+                      <div class="brand-menu">
+                        <button class="active" data-filter="all">All</button>
+                        <button data-filter="Lamborghini">Lamborghini</button>
+                        <button data-filter="Ferrari">Ferrari</button>
+                        <button data-filter="Porsche">Porsche</button>
+                        <button data-filter="Pagani Huayra">Pagani Huayra</button>
+                        <button data-filter="Mercedes">Mercedes</button>
+                        <button data-filter="Lexus">Lexus</button>
+                        <button data-filter="Aston Martin">Aston Martin</button>
+                        <button data-filter="Bentley">Bentley</button>
+                        <button data-filter="Koenigsegg">Koenigsegg</button>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 brand-item Lamborghini">
+                          <div class="brand-name">
+                            <h3>Lamborghini</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/hang-xe-lamborghini.jpg" alt="Lamborghini">
+                          </div>
+                          
+                        </div>
+                        <div class="col-md-4 col-sm-6 brand-item Ferrari">
+                          <div class="brand-name">
+                            <h3>Ferrari</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/hang-xe-ferrari.jpg" alt="Ferrari">
+                          </div>
+                          
+                        </div>
+                        <div class="col-md-4 col-sm-6 brand-item Porsche">
+                          <div class="brand-name">
+                            <h3>Porsche</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/cars4.jpg" alt="Porsche">
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-4 col-sm-6 brand-item Pagani Huayra">
+                          <div class="brand-name">
+                            <h3>Pagani Huayra</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/hang-xe-Pagani-Huayra.jpg" alt="Porsche">
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-4 col-sm-6 brand-item Mercedes">
+                          <div class="brand-name">
+                            <h3>Mercedes</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/hang-xe-maybach.jpg" alt="Porsche">
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-4 col-sm-6 brand-item Lexus">
+                          <div class="brand-name">
+                            <h3>Lexus</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/hang-xe-lexus.jpg" alt="Porsche">
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-4 col-sm-6 brand-item Aston Martin">
+                          <div class="brand-name">
+                            <h3>Aston Martin</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/hang-xe-Aston-Martin.jpg" alt="Porsche">
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-4 col-sm-6 brand-item Bentley">
+                          <div class="brand-name">
+                            <h3>Bentley</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/hang-xe-bentley.jpg" alt="Porsche">
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-4 col-sm-6 brand-item Koenigsegg">
+                          <div class="brand-name">
+                            <h3>Koenigsegg</h3>
+                          </div>
+                          <div class="brand-img">
+                            <img src="images/hang-xe-oto-Koenigsegg.jpg" alt="Porsche">
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </section>
+            
+            <div id="about">
+              <h2>About Us</h2>
+              <p>Welcome to our luxury car dealership, where we offer the most exclusive and high-end vehicles on the market. Our goal is to provide our clients with an exceptional car-buying experience, from the moment they walk in the door to the moment they drive off in their dream car.</p>
+              <p>Our team of experienced professionals is dedicated to providing our clients with the highest level of customer service. We understand that purchasing a luxury car is a significant investment, and we are here to guide you through every step of the process.</p>
+              <p>Whether you are looking for a sporty coupe or a spacious SUV, we have a wide selection of luxury vehicles to choose from. We work with the best manufacturers in the world to bring you the most exclusive and high-quality cars on the market.</p>
+              <p>Thank you for considering our dealership for your luxury car purchase. We look forward to the opportunity to serve you and exceed your expectations.</p>
+            </div>            
+            
+
+            <footer>
+              <p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                  Copyright &copy; 2023 Lyxury Cars
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </p>
+
+              <section class="contact-section">
+                <div class="row">
+                    
+                    <div class="col span-2-of-3">
+                       <form>
+                           <div class="row">
+                               <div class="col span-1-of-3">
+                                    <label>Name</label>
+                               </div>
+                               <div class="col span-2-of-3">
+                                    <input type="text" placeholder="Your Name">
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col span-1-of-3">
+                                    <label>Email</label>
+                               </div>
+                               <div class="col span-2-of-3">
+                                    <input type="email" placeholder="Your Email">
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col span-1-of-3">
+                                    <label>Message</label>
+                               </div>
+                               <div class="col span-2-of-3">
+                                    <textarea  placeholder="Your Message"></textarea>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <input type="submit" class="btn" value="Send It">
+                           </div>
+                       <div class="col span-1-of-3">
+                        <ul class="information">
+                            <li>Address: Prince Turki Ibn Abdulaziz Al Awwal Rd, Hittin, Riyadh 13513</li>
+                            <li></i>Email: info@sevenauction.com</li>
+                            <li></i>Phone: (+084 )099-923-232-320</li>
+                        </ul>
+                    </div>
+                    </div>
+                  </form>
+                </div>
+             </section>
+             <!-- kiemtraloi -->
+             <head>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js"></script>
+            </head>
+            <style>
+      #countdown {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: justify;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="countdown"></div>
+    <script>
+      function initCountdown() {
+        // Get user's location
+        navigator.geolocation.getCurrentPosition(function (position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+          
+          // Calculate the countdown time based on the user's location
+          var countdownTime = calculateCountdownTime(latitude, longitude);
+          
+          // Start the countdown
+          startCountdown(countdownTime);
+        });
+      }
+      
+      function calculateCountdownTime(latitude, longitude) {
+        // Calculate the countdown time based on the user's location
+        // Here we just use a simple formula as an example
+        // You can replace this with your own algorithm
+        var countdownTime = Math.abs(latitude) + Math.abs(longitude);
+        countdownTime = Math.round(countdownTime * 60); // Convert to seconds
+        return countdownTime;
+      }
+      
+      function startCountdown(countdownTime) {
+        var countdownElement = document.getElementById("countdown");
+        var countdownInterval = setInterval(function () {
+          countdownTime--;
+          var minutes = Math.floor(countdownTime / 60);
+          var seconds = countdownTime % 60;
+          countdownElement.innerHTML =
+            ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+          if (countdownTime === 0) {
+            clearInterval(countdownInterval);
+            playSound();
+          }
+        }, 1000);
+      }
+      
+      function playSound() {
+        // Play the sound when the countdown reaches zero
+        var sound = new Audio("alarm.mp3");
+        sound.play();
+      }
+      
+      initCountdown();
+    </script>
+            </footer>
+
+        <script src="app.js"></script>    
+            
+</body>
+</html>
